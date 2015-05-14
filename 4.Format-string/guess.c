@@ -15,7 +15,7 @@ int main()
   char secret[LEN], code[LEN];
   
   srand(getpid());
-  snprintf(secret, LEN, "%08d",rand());
+  snprintf(secret, LEN, "%08d\n",rand());
 
   printf("Guess the number\n");
   while( !ok && i++<5) {
